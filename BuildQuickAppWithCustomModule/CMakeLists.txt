@@ -5,7 +5,7 @@ project(BuildQuickAppWithCustomModule VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(QT_QML_IMPORT_PATH
     ${QT_QML_IMPORT_PATH}
-    D:/MyGithub/learn-qt6-cmake/BuildQuickAppWithCustomModule/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CControls
+    ${CMAKE_BINARY_DIR}/CControls
 )
 find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
 
