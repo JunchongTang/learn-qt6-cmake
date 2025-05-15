@@ -4,12 +4,12 @@
 <context>
     <name>Main</name>
     <message>
-        <location filename="../Main.qml" line="9"/>
+        <location filename="Main.qml" line="9"/>
         <source>Translation example</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Main.qml" line="45"/>
+        <location filename="Main.qml" line="53"/>
         <source>Hello, automatic translation.</source>
         <translation type="unfinished"></translation>
     </message>

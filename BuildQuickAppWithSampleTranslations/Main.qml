@@ -14,6 +14,8 @@ Window {
 
         ColumnLayout {
             anchors.fill: parent
+            spacing: 10
+
             Row {
                 Layout.alignment: Qt.AlignHCenter
                 spacing: 10
@@ -21,10 +23,11 @@ Window {
                     model: ListModel {
                         ListElement {name: "English"; language: "en"}
                         ListElement {name: "简体中文"; language: "zh_CN"}
-                        ListElement {name: "日本語"; language: "jp"}
+                        ListElement {name: "日本語"; language: "ja_JP"}
                         ListElement {name: "En français"; language: "fr"}
                     }
                     delegate: RadioButton {
+                        checked: Qt.uiLanguage === language
                         text: name
                         onClicked: {
                             Qt.uiLanguage = language;
@@ -32,6 +35,11 @@ Window {
                         }
                     }
                 }
+            }
+
+            Text {
+                Layout.alignment: Qt.AlignHCenter
+                text: "Qt.uiLanguage:" + Qt.uiLanguage
             }
 
             Item {
