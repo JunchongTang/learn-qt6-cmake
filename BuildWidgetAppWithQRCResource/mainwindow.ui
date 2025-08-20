@@ -45,7 +45,7 @@
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/assets/github.png);
+         <string notr="true">border-image: url(:/resource/assets/github.png);
 
 
 </string>
@@ -67,7 +67,7 @@
          </font>
         </property>
         <property name="text">
-         <string>from qt_add_resources(*.png)</string>
+         <string>from qt_add_resources(... resource.qrc)</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignmentFlag::AlignCenter</set>

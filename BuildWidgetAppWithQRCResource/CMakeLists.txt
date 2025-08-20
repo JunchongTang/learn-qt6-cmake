@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(BuildWidgetAppWithResource VERSION 0.1 LANGUAGES CXX)
+project(BuildWidgetAppWithQRCResource VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -17,13 +17,10 @@ set(PROJECT_SOURCES
         mainwindow.ui
 )
 
+qt_add_resources(PROJECT_SOURCES resources.qrc)
+
 add_executable(BuildWidgetAppWithResource
     ${PROJECT_SOURCES}
-)
-
-qt_add_resources(BuildWidgetAppWithResource imageresources
-    PREFIX "/images"
-    FILES assets/github.png
 )
 
 target_link_libraries(BuildWidgetAppWithResource PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
