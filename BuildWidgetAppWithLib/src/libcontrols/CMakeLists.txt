@@ -1,4 +1,4 @@
-qt_add_library(controls STATIC
+qt_add_library(controls SHARED
     cpushbutton.cpp
     cpushbutton.h
 )
